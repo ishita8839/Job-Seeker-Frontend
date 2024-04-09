@@ -25,9 +25,9 @@ const Search = () => {
   }
 
   return (
-    <div className='searchDiv grid gap-10 bg-greyIsh rounded-[10px] p-[3rem]'>
+    <div className='searchDiv flex gap-10 bg-greyIsh rounded-[10px] p-[3rem] justify-center flex-col'>
         <form action="">
-            <div className='firstDiv flex justify-between items-center rounded-[8px] gap-[10px] bg-white p-5 shadow-lg shadow-greyIsh-700'>
+            <div className='firstDiv md:flex-row flex-col flex justify-between items-center rounded-[8px] gap-[10px] bg-white w-fit p-5 shadow-lg shadow-greyIsh-700'>
                 <div className='flex gap-2 items-center'>
                     <AiOutlineSearch className='text-[25px] icon'/>
                     <input 
@@ -74,7 +74,7 @@ const Search = () => {
             </div>
         </form>
 
-        <div className='setDiv flex items-center gap-10 justify-center'>
+        <div className='setDiv flex items-center gap-10 justify-center md:flex-row flex-col'>
             <div className='singleSearch flex items-center gap-2'> 
             <label htmlFor="relevance" className='text-[#808080] fonr-semibold '>Sort by:</label>
             <select id="relevance" name="" className='bg-white rounded-[3px] px-4 py-1'>
